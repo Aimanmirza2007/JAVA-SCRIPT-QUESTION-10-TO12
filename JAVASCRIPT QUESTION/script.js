@@ -317,11 +317,11 @@ console.log(str("Hello", "World"))
 
 let maxNumber = [1, 2, 3, 4, 5, 6, 8]
 
-let checkMax = (maxNumber) => {
+let checkMax =maxNumber.reduce (prev,curr) => {
 
-    return Math.max(...maxNumber)
+    return prev > cuur ? prev : curr;
 }
-console.log("the maximum number in array is " + checkMax(maxNumber));
+console.log("the maximum number in array is " + checkMax);
 
 // //--------------------------------------QUESTION NUMBER 04--------------------------------------------------------//
 
